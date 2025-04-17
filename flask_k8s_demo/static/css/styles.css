@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+header {
+  background-color: #f57c00;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.tarifler {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.tarif-kart {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarif-kart:hover {
+  transform: scale(1.05);
+}
+
+.tarif-kart img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tarif-kart h3 {
+  margin: 0.5em 0;
+  color: #f57c00;
+}
+
+.tarif-kart button {
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tarif-kart button:hover {
+  background-color: #e65100;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #eee;
+  margin-top: 3em;
+}

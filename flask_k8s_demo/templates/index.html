@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lezzetli Tarifler</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>🍽️ Lezzetli Tarifler</h1>
+      <p>En sevilen yemek tarifleri burada!</p>
+    </header>
+
+    <main>
+      <section class="tarifler">
+        <div class="tarif-kart">
+          <img
+            src="{{ url_for('static', filename='images/corba.png') }}"
+            alt="Çorba Tarifleri"
+          />
+          <h3>Çorba Tarifleri</h3>
+          <p>Sıcak ve nefis bir başlangıç için geleneksel çorbalar</p>
+          <button class="tarif-buton">Tarifleri Gör</button>
+        </div>
+
+        <div class="tarif-kart">
+          <img
+            src="{{ url_for('static', filename='images/makarna.png') }}"
+            alt="Makarna Tarifleri"
+          />
+          <h3>Makarna Tarifleri</h3>
+          <p>Pratik, lezzetli ve doyurucu makarnalar</p>
+          <button class="tarif-buton">Tarifleri Gör</button>
+        </div>
+
+        <div class="tarif-kart">
+          <img
+            src="{{ url_for('static', filename='images/tatli.png') }}"
+            alt="Tatlı Tarifleri"
+          />
+          <h3>Tatlı Tarifleri</h3>
+          <p>Vazgeçilmez sütlü ve şerbetli tatlılar</p>
+          <button class="tarif-buton">Tarifleri Gör</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lezzetli Tarifler. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+      const butonlar = document.querySelectorAll(".tarif-buton");
+
+      butonlar.forEach((buton) => {
+        buton.addEventListener("click", () => {
+          alert("Tarifler henüz giriliyor...");
+        });
+      });
+    </script>
+  </body>
+</html>
